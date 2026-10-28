@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[Lopez Nicolas] — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/StylesNew.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="blob-big" style="top: 50px; left: -200px;"></div>
+  <div class="topbar-inner">
+    <a class="logo" href="#home">&lt;<span> Portfolio </span> /&gt;</a>
+    <nav class="topnav">
+      <a href="#home" class="active">
+        <i class="ri-home-5-line"></i>
+        <span data-i18n="nav_home">home</span>
+      </a>
+      <a href="#about">
+        <i class="ri-user-smile-line"></i>
+        <span data-i18n="nav_about">Sobre mí</span>
+      </a>
+      <a href="#formacion">
+        <i class="ri-graduation-cap-line"></i>
+        <span data-i18n="nav_edu">Formación</span>
+      </a>
+      <a href="#experiencia">
+        <i class="ri-briefcase-4-line"></i>
+        <span data-i18n="nav_exp">Experiencia</span>
+      </a>
+      <a href="#skills">
+        <i class="ri-code-s-slash-line"></i>
+        <span data-i18n="nav_skills">Habilidades</span>
+      </a>
+      <a href="#proyectos">
+        <i class="ri-gamepad-line"></i>
+        <span data-i18n="nav_projects">Proyectos</span>
+      </a>
+      <a href="#contacto">
+        <i class="ri-send-plane-line"></i>
+        <span data-i18n="nav_contact">Contacto</span>
+      </a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang-switch" role="group" aria-label="Selector de idioma">
+        <button type="button" class="lang-btn active" data-lang="es">ES</button>
+        <button type="button" class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <span class="status-pill"><span class="dot"></span> <span data-i18n="status_work">Open to work</span></span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- HOME -->
+  <section id="home" class="hero" style="border-top:none;">
+    <!-- Resplandor superior izquierdo (el grande que ilumina el título) -->
+    <div class="blob-big" style="top: -80px; left: -140px;"></div>
+    
+    <!-- Resplandor lateral derecho (detrás del panel de código) -->
+    <div class="blob-small" style="top: 100px; right: -120px;"></div>
+    
+    <!-- Resplandor tenue inferior -->
+    <div class="blob-small" style="bottom: -150px; left: 30%;"></div>
+
+    <div class="wrap" style="position: relative; z-index: 2; width: 100%; display: contents;">
+      <!-- Tu contenido de la izquierda (textos, título, botones) -->
+      <div>
+        <span class="eyebrow" data-i18n="hero_eyebrow">Desarrollador de videojuegos</span>
+        <h1 class="headline">
+          Lopez Nicolas
+          <span class="role-line">
+            <span data-i18n="hero_role_prefix">Soy </span><span class="role-word" id="roleWord"></span><span data-i18n="hero_role_suffix"> de videojuegos</span>
+          </span>
+        </h1>
+        <p class="pitch" data-i18n="hero_pitch">
+          Estudiante de <strong>Diseño y Programación de Videojuegos</strong>, formándome en Unity,
+          Unreal Engine 5 y C#, con base también en arte y animación (Maya, ZBrush, Substance Painter, Photoshop). Me interesa participar del
+          ciclo completo de un juego: prototipo, sistemas, arte y pulido final.
+        </p>
+        <div class="hero-actions">
+          <a href="#proyectos" class="btn btn-primary" data-i18n="btn_projects">Ver proyectos</a>
+          <a href="#contacto" class="btn btn-ghost" data-i18n="btn_contact">Contactame</a>
+        </div>
+      </div>
+
+      <div class="code-panel">
+        <div class="code-panel-head">
+          <div class="traffic"><span></span><span></span><span></span></div>
+          <span class="filename">Developer.cs</span>
+        </div>
+        <div class="code-panel-body">
+<div><span class="ln">01</span><span class="tok-kw">public class</span> <span class="tok-type">Developer</span> {</div>
+<div><span class="ln">02</span>&nbsp;&nbsp;<span class="tok-kw">public string</span> Name = <span class="tok-str">"Lopez Nicolas"</span>;</div>
+<div><span class="ln">03</span>&nbsp;&nbsp;<span class="tok-kw">public string</span> Role = <span class="tok-str" data-i18n="code_role">"Desarrollador / Game Designer"</span>;</div>
+<div><span class="ln">04</span>&nbsp;&nbsp;<span class="tok-kw">public string</span> Engine = <span class="tok-str" data-i18n="code_engine">"Unity por el momento"</span>;</div>
+<div><span class="ln">05</span>&nbsp;&nbsp;<span class="tok-kw">public string</span> Status = <span class="tok-str">"Open to work"</span>;</div>
+<div><span class="ln">06</span>&nbsp;&nbsp;<span class="tok-com" data-i18n="code_comment">// en formación — Escuela Da Vinci</span></div>
+<div><span class="ln">07</span>}</div>
+        </div>
+        <div class="code-panel-foot">&gt; Debug.Log(Developer.Status); <span style="color:var(--text-soft)">// "Open to work"</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-head">
+      <span class="section-eyebrow" data-i18n="about_eyebrow">01 · Resumen</span>
+      <h2 class="section-title" data-i18n="about_title">Sobre mí</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p data-i18n="about_p1">
+          ¡Hola! Sea el momento del día en que estés visitando esta web que armé con mucho cariño, te doy la bienvenida. Para contarte un poco sobre mí: soy un gran fanático de los juegos competitivos (como Call of Duty, Counter-Strike, Rust o EA FC). Estudio esto porque siempre me dio muchísima curiosidad el 'detrás de escena', entender cómo funcionan y cómo se crea todo. Mi gran meta es llegar a trabajar en alguno de esos títulos o en proyectos de estilo AAA.
+        </p>
+        <p data-i18n="about_p2">
+          Tengo un perfil muy abierto: me gusta escuchar, aprender de los demás y mejorar mis habilidades día a día con la mejor predisposición. Me siento cómodo moviéndome entre distintas áreas, ya sea programando, creando arte o armando documentación, y disfruto mucho el trabajo en equipo.
+        </p>
+        <p data-i18n="about_p3">
+          Para ir cerrando, te agradezco un montón por tomarte el tiempo de leer esto y chequear mi perfil. ¡Estoy a disposición para cualquier propuesta, muchas gracias!
+        </p>
+        <div class="stat-row">
+          <div class="stat"><div class="num">[18/35]</div><div class="label" data-i18n="stat_subjects">Materias Aprobadas</div></div>
+          <div class="stat"><div class="num">3°</div><div class="label" data-i18n="stat_years">Años Total de carrera</div></div>
+          <!-- <div class="stat"><div class="num">[0]</div><div class="label" data-i18n="stat_jams">Game jams</div></div> -->
+        </div>
+      </div>
+      <div class="info-card">
+        <h3>Base station</h3>
+        <div class="info-list">
+          <div><span class="k" data-i18n="info_loc_k">Ubicación</span><span data-i18n="info_loc_v">Buenos Aires, Argentina</span></div>
+          <div><span class="k" data-i18n="info_edu_k">Formación</span><span data-i18n="info_edu_v">Diseño y Prog. de Videojuegos</span></div>
+          <div><span class="k" data-i18n="info_inst_k">Institución</span><span>Escuela Da Vinci</span></div>
+          <div><span class="k" data-i18n="info_lang_k">Idiomas</span><span data-i18n="info_lang_v">Español · Inglés · Italiano</span></div>
+          <div><span class="k" data-i18n="info_look_k">Buscando</span><span data-i18n="info_look_v">[Pasantía / Empleo]</span></div>
+        </div>
+        <div class="core-stack">
+          <span>Unity</span><span>C#</span><span>Git</span><span>HTML/CSS/JS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMACIÓN -->
+  <section id="formacion">
+    <div class="section-head">
+      <span class="section-eyebrow" data-i18n="edu_eyebrow">02 · Formación</span>
+      <h2 class="section-title" data-i18n="edu_title">Formación & Cursos</h2>
+    </div>
+    <div class="timeline">
+      <div class="tl-item">
+        <span class="tl-date" data-i18n="tl1_date">[2025] — presente</span>
+        <h3 data-i18n="tl1_title">Diseño y Programación de Videojuegos</h3>
+        <div class="org" data-i18n="tl1_org">Escuela Da Vinci — título oficial de Diseñador/a y Programador/a de Simuladores Virtuales (3 años)</div>
+        <p data-i18n="tl1_desc">
+          Formación en game design, programación con C# en Unity y Unreal Engine 5, animación 2D/3D,
+          concept art, IA aplicada a videojuegos, VR/AR y postproducción de proyectos.
+        </p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-date" data-i18n="tl_web_date">Certificación</span>
+        <h3 data-i18n="tl_web_title">Desarrollo Web (HTML, CSS & JavaScript)</h3>
+        <div class="org" data-i18n="tl_web_org">Formación Complementaria</div>
+        <p data-i18n="tl_web_desc">
+          Maquetación y estructuración de sitios web responsivos con HTML5 y CSS3, sumando interactividad y manipulación del DOM con JavaScript.
+        </p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-date">[2011] — [2023]</span>
+        <h3 data-i18n="tl2_title">[Educación Primaria y Secundaria]</h3>
+        <div class="org">[San Mauro Castelverde - Quilmes]</div>
+        <p data-i18n="tl2_desc">Graduado en Educación Secundaria con énfasis en Economía y formación en idiomas Inglés e Italiano.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCIA -->
+  <section id="experiencia">
+    <div class="section-head">
+      <span class="section-eyebrow" data-i18n="exp_eyebrow">03 · Trayectoria Laboral</span>
+      <h2 class="section-title" data-i18n="exp_title">Experiencia & Emprendimientos</h2>
+    </div>
+    <div class="timeline">
+      <div class="tl-item">
+        <span class="tl-date" data-i18n="exp1_date">Julio 2025 — presente</span>
+        <h3 data-i18n="exp1_title">Fundador & Operador General — CebaMate_Quilmes</h3>
+        <div class="org" data-i18n="exp1_org">E-commerce & Marca Propia (Tiendanube · Instagram · TikTok)</div>
+        <p data-i18n="exp1_desc">
+          Gestión integral end-to-end de emprendimiento comercial: administración de tienda online en Tiendanube (con múltiples medios de pago y envíos a todo el país), estrategia de marketing digital y creación de contenido para Instagram y TikTok, gestión de compras y proveedores, control de stock, armado de pedidos y atención directa al cliente.
+        </p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-date" data-i18n="exp2_date">2023 — presente</span>
+        <h3 data-i18n="exp2_title">Estilista & Peluquero Profesional (Autónomo)</h3>
+        <div class="org" data-i18n="exp2_org">Servicio en Estudio Propio & A Domicilio — Certificado</div>
+        <p data-i18n="exp2_desc">
+          Trabajo autónomo brindando atención personalizada tanto en local como a domicilio. Especialización en diversas técnicas de corte con capacitación constante, priorizando el máximo cuidado por el detalle estético, la puntualidad, la gestión de agenda y la fidelización de clientes.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-head">
+      <span class="section-eyebrow" data-i18n="skills_eyebrow">04 · Conocimientos</span>
+      <h2 class="section-title" data-i18n="skills_title">Herramientas & Software</h2>
+    </div>
+    <div class="skills-cats">
+      <div class="skill-card">
+        <h3 data-i18n="skill_cat1">Motores & Programación</h3>
+        <div class="skill-pills">
+          <span>Unity</span><span>Unreal Engine 5</span><span>C#</span><span>HTML & CSS</span><span>JavaScript</span><span>Visual Studio</span><span>Construct</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3 data-i18n="skill_cat2">Arte 3D</h3>
+        <div class="skill-pills">
+          <span>Maya 3D</span><span>ZBrush</span><span>Substance Designer</span><span>Substance Painter</span><span>Marmoset</span><span>Marvelous Designer</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3 data-i18n="skill_cat3">Arte 2D & Animación</h3>
+        <div class="skill-pills">
+          <span>Photoshop</span><span>Dragon Bones</span><span>Spine</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3 data-i18n="skill_cat4">Diseño, Gestión & Producción</h3>
+        <div class="skill-pills">
+          <span>Game Design</span><span>Level Design</span><span data-i18n="skill_proto">Prototipado</span><span data-i18n="skill_gdd">Documentación (GDD)</span><span>Tiendanube</span><span data-i18n="skill_mkt">Marketing & Redes</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="proyectos">
+    <div class="section-head">
+      <span class="section-eyebrow" data-i18n="proj_eyebrow">05 · Algunos Trabajos</span>
+      <h2 class="section-title" data-i18n="proj_title">Proyectos</h2>
+    </div>
+    <div class="proj-grid">
+      <article class="proj-card">
+        <div class="proj-thumb video">
+          <video autoplay loop muted playsinline>
+               <source src="assets/img/tbrender_001.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="proj-body">
+          <span class="proj-tag" data-i18n="proj1_tag">Personaje - Modelo 3D · Final</span>
+          <h3 data-i18n="proj1_title">Modelado, Texturizado y Presentación de Personaje</h3>
+          <p data-i18n="proj1_desc">"Modelado, texturizado y optimización de un personaje 3D game-ready. Pipeline completo end-to-end utilizando ZBrush, Autodesk Maya, Substance Painter y Marmoset Toolbag."</p>
+          <div class="proj-links"><a href="#" data-i18n="proj1_link">Video →</a></div>
+        </div>
+      </article>
+
+      <!-- Segundo proyecto -->
+      <article class="proj-card">
+        <!-- CARRUSEL EN EL THUMB -->
+        <div class="proj-thumb carousel-thumb">
+          <div class="carousel-track">
+            <div class="carousel-slide active">
+              <img src="assets/img/Model3DInspVerti2.jpg" alt="Render Maya 1">
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/img/Model3DInspVerti.jpg" alt="Render Maya 2">
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/img/ModelGlock17Wireframe.jpg" alt="Render Maya 3">
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/img/ModelSniperWireframe.jpg" alt="Render Maya 4">
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/img/ModelJuntos3.jpg" alt="Render Maya 5">
+            </div>
+          </div>
+
+          <!-- Flechas de navegación -->
+          <button class="carousel-btn prev-btn" aria-label="Anterior">&lsaquo;</button>
+          <button class="carousel-btn next-btn" aria-label="Siguiente">&rsaquo;</button>
+
+          <!-- Indicadores (puntos) -->
+          <div class="carousel-dots"></div>
+        </div>
+
+        <!-- CUERPO DE LA TARJETA -->
+        <div class="proj-body">
+          <span class="proj-tag" data-i18n="proj2_tag">Maya · Modelado</span>
+          <h3 data-i18n="proj2_title">Modelado de Maqueta y 2 Objetos Complejos</h3>
+          <p data-i18n="proj2_desc">
+            Aprendiendo y desarrollando habilidades en modelado 3D por primera vez y dando
+            por terminada mi materia con este proyecto final con sus UVs realizados
+            correctamente para texturizado.
+          </p>
+          <div class="proj-links">
+            <a href="#" data-i18n="proj2_link">Imágenes &rarr;</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj-card">
+        <!-- CARRUSEL EN EL THUMB -->
+        <div class="proj-thumb carousel-thumb">
+          <div class="carousel-track">
+            <div class="carousel-slide active">
+              <img src="assets/img/TP_DiseñoGrafico.png" alt="Render Maya 1">
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/img/TP_DiseñoGrafico (2).png" alt="Render Maya 2">
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/img/TP_DiseñoGrafico (3).png" alt="Render Maya 3">
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/img/TP_DiseñoGrafico (4).png" alt="Render Maya 4">
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/img/TP_DiseñoGrafico (5).png" alt="Render Maya 5">
+            </div>
+          </div>
+
+          <!-- Flechas de navegación -->
+          <button class="carousel-btn prev-btn" aria-label="Anterior">&lsaquo;</button>
+          <button class="carousel-btn next-btn" aria-label="Siguiente">&rsaquo;</button>
+
+          <!-- Indicadores (puntos) -->
+          <div class="carousel-dots"></div>
+        </div>
+
+        <!-- CUERPO DE LA TARJETA -->
+        <div class="proj-body">
+          <span class="proj-tag" data-i18n="proj3_tag">Substance Painter · Texturizado</span>
+          <h3 data-i18n="proj3_title">Texturizado de Modelo 3D</h3>
+          <p data-i18n="proj3_desc">
+           Proyecto de texturizado y look dev desarrollado en Substance Painter. Consiste en la personalización de un modelo 3D orgánico combinando materiales de alta fidelidad, 
+           superficies plásticas con acabado metálico/glossy, rejillas de altavoz y detalles de iluminación emisiva.
+           El flujo de trabajo incluyó pintura de texturas PBR, aplicación de mapas de desgaste, efectos de goteo tipo sangre y branding integrado con estética temática.
+          </p>
+          <div class="proj-links">
+            <a href="#" data-i18n="proj3_link">Imágenes &rarr;</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- <article class="proj-card">
+        <div class="proj-thumb">[ captura / gif ]</div>
+        <div class="proj-body">
+          <span class="proj-tag">Game jam · prototipo</span>
+          <h3>[Nombre del proyecto 3]</h3>
+          <p>[Tema de la jam y qué construiste en 48/72 horas.]</p>
+          <div class="proj-links"><a href="#">itch.io →</a></div>
+        </div>
+      </article>  -->
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <div class="section-head">
+      <span class="section-eyebrow" data-i18n="contact_eyebrow">06 · Información de Contacto</span>
+      <h2 class="section-title" data-i18n="contact_title">Contacto</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Email</h3>
+        <a class="big-link" href="mailto:nicolas.lopezz0@hotmail.com">nicolas.lopezz0@hotmail.com</a>
+        <div class="social-row">
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/nicol%C3%A1s-lopez-297b2b270/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-ghost" href="https://github.com/ElNeeko" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn-ghost" href="https://nickolop.itch.io/" target="_blank" rel="noopener">itch.io</a>
+        </div>
+      </div>
+      <div class="contact-card">
+        <h3 data-i18n="contact_loc_title">Ubicación</h3>
+        <p style="color:var(--text-soft); margin:0 0 6px;" data-i18n="contact_loc_place">Buenos Aires, Argentina</p>
+        <p style="color:var(--text-soft); margin:0;" data-i18n="contact_loc_avail">Disponible para conversar sobre cualquier propuesta.</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <span data-i18n="footer_text">© 2026 Nicolas Lopez — ¡Muchas Gracias!</span> <span class="heart">♥</span>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
